@@ -21,7 +21,11 @@ let priceAry=[2000,3000,4000];
 console.log(priceAry); 
     
 
+<<<<<<< HEAD
 let prodoctObj={ 이름:"원조커피", 가격:2500 ,수량:30};
+=======
+let prodoctObj={ 이름:"원조커피", 가격:2500 ,수량:30 };
+>>>>>>> c643bfc (day3 과제제출)
 console.log(prodoctObj);
 
 
