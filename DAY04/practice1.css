@@ -1,0 +1,31 @@
+#head {
+  font-family: 맑은고딕;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.fir {
+  color: blue;
+  font-family: 굴림;
+  font-weight: bold;
+  word-spacing: 10px;
+  letter-spacing: 100;
+  font-size: larger;
+  font-weight: bold;
+  line-height: 200%;
+
+}
+
+.sec {
+  color: red;
+  text-decoration: line-through overline underline;
+  text-align: center;
+
+}
+
+#mind {
+  font-weight: bold;
+  text-shadow: 0px 0px 2px red;
+  font-size: larger;
+}

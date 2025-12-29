@@ -49,6 +49,49 @@
 
 // [지문8] 1차점수 와 2차점수 prompt함수로 각 입력받아서 총점이 150점이상이면 '합격' 아니면 '불합격' HTML의 <h3> 에 출력하시오.
 
-  // let score1 = Number(prompt("1차 점수를 입력하세요"));
-  // let score2 = Number(prompt("2차 점수를 입력하세요"));
+
+// 할당/대입연산자
+// 오른쪽 자료를 왼쪽에 대입,let 변수명=3
+// += 오른쪽 자료를 왼쪽 자료와 더한 후 왼쪽에 대입
+// ->let a=2; a+=3,a는 5가 저장된다.
+// ->let  a=2; a=a+3; a는 5가 저장된다.
+
+// //5.증감연산자 증가,또는 감소 연산자
+// ++,--
+// 1.선위 증가:++변수명;,선위 감소:--변수명;
+// 2.후위 증가: 변수명++;,후위 감소:변수명--;
+// // *선위 후위는 ;(세미콜론)/문장
+
+// let age=40;
+// age++; //혼자 있을때는 차이점x
+// ++age; //혼자 있을때는차이점x
+
+// console.log(++age);  //세미콜론 안에 여러 명령어가 존재하므로 차이 존재
+// console.log(age++);
+// let score1=prompt('1차점수를입력하세요');
+// let score2=prompt('2차점수를입력하세요');
+// let sum=Number(score1)+Number(score2);
+// let result=sum>=150 ?'합격':'불합격';
+
+// document.querySelector('h3').innerHTML=`실습8: ${result}`; //미리 h3 마크업을 만들어야 한다.,js파일 호출 코드 위에 html이 존재해야한다. 즉 js파일은 가장 하단에 작성한다.
+
+
+
 // [지문9] 두 사람의 이름을 prompt함수로 각 입력받아서 만일 이름이 '유재석' 이면 뒤에 (방장) 이라고 이름 뒤에 붙 이고 아니면 생략한다.  HTML의 <ol> 에 결과를 출력하시오.
+
+
+let person1=prompt('첫번째 이름을 입력하세요');
+let person2=prompt('두번째 이름을 입력하세요');
+
+person1+=person1=='유재석' ? '(방장)': ' ';
+person2+=person2=='유재석' ? '(방장)': ' ';
+
+let result2=`
+  <li>${person1}</li>
+  <li>${person2}</li>
+  `;
+  
+  document.querySelector('ol').innerHTML=result2;
+  //연산은 매개변수(연산은 인수에 따라 결과를 항상다르게 반횐된다.)
+
+

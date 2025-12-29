@@ -1,0 +1,33 @@
+.title{ 
+  font-family: "맑은 고딕,굴림";
+  font-size: 40px;
+  font-weight: bold; /*글꼴 진하게*/
+  font-style: italic; /*글꼴 기울기 */
+  
+}
+
+/* 외부폰트:1.영문 구글폰트사이트 2.한글:눈누사이트 */
+
+@font-face {
+    font-family: 'Euljiro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+.content{
+  font-family: 'Euljiro';
+  color: purple;
+  word-spacing: 100; /* 단어 간격 */
+  letter-spacing: 10px; /* 글자 간격 */
+  line-height: 200%; /* 줄 간격 백분율 %*/
+}
+
+.writer {
+  text-align:center; /*마크업 안에 있는 내용을 가로정렬 */
+  text-decoration: line-through; 
+  text-shadow:10px 10px 5px red; /*텍스트 그림자*/ /*x축(+right -left) y축(+bottom)*/ 
+
+ color: green;/* 방법1*/
+ color:rgb(140, 200,300); /* 방법2*/
+ color:#ce0e14d8;        /*방법3:헥스코드(6자릿수로 16진수코드)*/
+}
