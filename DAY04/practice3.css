@@ -4,6 +4,27 @@
   font-weight: bold;
 }
 .fir{
-  font-famiy:
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.option{
+    background-color:#eff4f9;
+    color:#202124 ;
+}
+#submit{
+    background-color:#1a73e8;
+    color:#ffffff ;
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #1a73e8;
+}
+textarea{
+    border: 1px solid #eff4f9;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #eff4f9;
 }
 

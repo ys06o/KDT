@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Page Title</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="stylesheet" href="practice3.css">
-</head>
-<body>
 
-  <img src="./Google_Gemini_logo_2025.svg.png" width="200">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='practice02.css'>
+</head>
+
+<body>
+     <img src="./Google_Gemini_logo_2025.svg.png" width="200">
   <h2 id="title">제미나이 만족도 설문조사</h2>
   <div class="fir">
     <form>
@@ -41,6 +42,32 @@
 
       성별:<input type="radio" name="qu" value="yes">예 <input type="radio" name="qu" value="no">아니요
     </form>
-  </div>
+  </div><br>
+    <div id="half02">
+        <div class="option-name">3. 앞으로도 제미나이를 계속 사용할 계획이 있습니까?<br>
+            <div class="option">
+                 예<input type="radio" name="use"> 
+            </div><br>
+             <div class="option">
+                 아니오<input type="radio" name="use"> 
+            </div>
+        </div><hr>
+        <div class="option-name">4. 제미나이를 지인이나 다른사람에게 추천할 의향이 있습니까?<br>
+            <div class="option">
+                 예<input type="radio" name="use"> 
+            </div><br>
+             <div class="option">
+                 아니오<input type="radio" name="use"> 
+            </div>
+        </div><hr>
+        <div class="option-name">5. 제미나이를 지인이나 다른사람에게 추천할 의향이 있습니까?
+            <br><textarea name="text5" id="text5" cols="100" rows="10"></textarea>
+        </div><hr>
+
+        <button id="submit">
+            제출하기
+        </button>
+    </div>
 </body>
+
 </html>
