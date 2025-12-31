@@ -1,0 +1,40 @@
+.one {
+  border: 1px solid #eeeeee;
+  width: 360px;
+
+
+}
+
+.pic > img {
+  width: 200px;
+}
+
+.title {
+  padding:10px;
+  border-top: 1px solid #eeeeee;
+}
+
+.name {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.price {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.word {
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.orange {
+  color: orangered;
+  padding: 0 5px;
+}
+
+.review {
+  padding: 10px 0;
+}
