@@ -1,0 +1,54 @@
+body{
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    
+}
+.main{
+    background-color: white;
+    width: 432px;
+    border-radius: 0 0 8px 8px;
+    
+}
+.top1{
+    padding: 10px;
+}
+.input1{
+    border-top: 1px solid grey;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+input{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    line-height: 32px;
+    
+}
+
+.title-1{
+    text-align: center;
+}
+.text1{
+    margin-left: 20px;
+    font-size: 12px;
+    
+
+}
+.통합{
+
+}
+.logo{
+    text-align: center;
+}
+img{
+    width: 302px;
+}

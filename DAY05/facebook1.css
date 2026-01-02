@@ -1,0 +1,80 @@
+.face{
+  margin:-44px 0 -4px;
+  width: 500px; 
+}
+  .main {
+    background-color: #f2f4f7;
+  }
+
+  .login {
+    text-align: center;
+  }
+
+  .lobutton{
+    background-color:  #1888f2;
+    color: #FFF;
+    padding: 0px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    width: 332px;
+
+    
+  }
+
+  .admin{
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 0px 16px;
+    line-height: 48px;
+    background-color: #42b72a;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+  .inputtext {
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 300px;
+    padding: 10px 10px;
+  }
+
+  .forget {}
+
+  .name {
+    text-decoration: none;
+    color: blue;
+  }
+
+  .or>span {
+
+    width: 200px;
+    background: #FFF;
+    font-family: "맑은 고딕";
+  }
+  body {
+    background-color: white;
+    padding: 20px;
+}
+.button{
+    padding: 0px 8px;
+}
+.link {
+    text-decoration: none;
+    color: #8a8d91;
+    font-size: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.img{
+    width: 10px;
+    margin-right: 0px;
+}
+.re{
+    color: #737373;
+    font-size: 10px;
+}
