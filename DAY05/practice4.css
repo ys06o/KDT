@@ -7,11 +7,12 @@
 
 /* 로그인 구역 */
 .로그인구역{
-  width: 350px; /*구역 가로 사이즈*/
+  width: 350px; 
+  /*구역 가로 사이즈*/
   /* height: ;   일반적으로 높이는 관례적으로 잘 안씀 */
   text-align: center;
   margin:0 auto;
-  box-shadow:1px 3px 25px rgba(255, 0, 0, 0.683);
+  box-shadow:2px 3px 25px rgba(255, 0, 0, 0.683);
   padding:30px;
 }
 
