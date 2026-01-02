@@ -1,0 +1,33 @@
+/* *{
+  border: 1px solid red;
+  padding: 10px;
+} */
+#header,#main,#footer{
+  width: 1280px;
+  margin: 0 auto;
+}
+/*하위 요소들을 배치하는 방법 */
+#main{
+  display: flex;
+  flex-direction: row; /*가로배치 (기본값)*/
+  flex-wrap:nowrap; /*줄바꿈처리 안함*/
+  justify-content: space-between;
+}
+
+#content{
+  width: 830px; /* 크기(픽셀고정)*/
+}
+
+#sidebar{
+  width: 420px;
+}
+
+#footer{
+  background-color: gray;
+  color: white;
+}
+
+/* pc기준:1000~1400px */
+/* 높이는 내용물만큼 자동크기를 많이씀
+height잘안씀
+ */

@@ -87,18 +87,31 @@ let fruitList = [ '사과', '바나나' ];
 // else{
 //   console.log(`${year}은 평년입니다.`);
 // }
-// /*문제 7: 세 수 오름차순 정렬
-// 서로 다른 세 개의 정수를 입력받아, 오름차순(작은 수부터 큰 수 순서)으로 정렬하여 출력하는 프로그램을 작성하시오.
-// 예시: 17, 4, 8 입력 시 4, 8, 17 출력*/
+/*문제 7: 세 수 오름차순 정렬
+서로 다른 세 개의 정수를 입력받아, 오름차순(작은 수부터 큰 수 순서)으로 정렬하여 출력하는 프로그램을 작성하시오.
+예시: 17, 4, 8 입력 시 4, 8, 17 출력*/
 
-// let one=Number(prompt("첫번째 정수입력:"));
-// let two=Number(prompt("두번째 정수입력:"));
-// let tr=Number(prompt("세번째 정수입력:"));
+// let one = Number(prompt("첫번째 정수입력:"));
+// let two = Number(prompt("두번째 정수입력:"));
+// let tr = Number(prompt("세번째 정수입력:"));
 
-// if(one>two){
-  
+// if (one > two) {
+//   let temp = one;
+//   one = two;
+//   two = temp;
+// }
+// if (one > tr) {
+//   let temp = one;
+//   one = tr;
+//   tr = temp;
+// }
+// if (two > tr) {
+//   let temp = two;
+//   two = tr;
+//   tr = temp;
 // }
 
+// console.log(`${one} ${two} ${tr}`);
 
 /*문제 8: 가위바위보 게임
 두 명의 플레이어가 참여하는 가위바위보 게임을 만드시오.
@@ -140,23 +153,34 @@ let fruitList = [ '사과', '바나나' ];
 주차 위치 목록: let locationArray = [ 'A1', 'B3', 'C2' ];
 사용자로부터 차량 번호를 입력받아, carArray에서 해당 차량을 찾은 뒤 locationArray에 있는 그 차량의 주차 위치를 찾아 출력하는 프로그램을 작성하시오. 만약 해당하는 차량 번호가 없다면 '차량이 존재하지 않습니다.'를 출력하시오.*/
 
-let carnum=prompt("차량번호 입력:");
-let carArray = [ '250어7142', '142가7415', '888호8888'];
-let locationArray = [ 'A1', 'B3', 'C2' ];
+// let carnum = prompt("차량번호 입력:");
+// let carArray = ['250어7142', '142가7415', '888호8888'];
+// let locationArray = ['A1', 'B3', 'C2'];
+// let one = carArray.indexOf(carnum);
 
-one=carArray.indexOf(carnum);
-two=locationArray.indexOf(carnum)
-
-if(one==-1){
-  console.log("차량이 존재하지않습니다.");
-}
-else
-{
-  console.log(locationArray.indexOf(carnum));
-}
+// if (one == -1) {
+//   console.log("차량이 존재하지않습니다.");
+// }
+// else {
+//   console.log(locationArray[one]);
+// }
 
 
 /*문제 10: 수강 신청 목록에서 과목 제외하기
 현재 수강 신청한 과목 목록이 배열로 주어져 있습니다.
 let courseList = ['수학', '영어', '과학', '국어'];
 사용자로부터 제외하고 싶은 과목명을 입력받아, courseList에 해당 과목이 존재하면 목록에서 삭제한 뒤 변경된 배열 전체를 출력하세요. 만약 존재하지 않는 과목이면 '해당 과목은 신청 목록에 없습니다.'를 출력하는 프로그램을 작성하시오.*/
+
+
+let courseList = ['수학', '영어', '과학', '국어'];
+
+let subject=prompt("제외하고싶은 과목을 입력:");
+
+let a=courseList.indexOf(subject);
+if(a==-1){
+  console.log("해당 과목은 신청 목록에 없습니다.");
+}
+else{
+  courseList.splice(a,1);
+  console.log(courseList);
+}
