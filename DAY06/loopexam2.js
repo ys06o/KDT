@@ -23,13 +23,13 @@
 
 // 1.line은 1부터 5까지 1씩증가하면서 줄바꿈처리
 // 2.star는 1부터 현재줄수까지 1씩 증가하면서 "*"출력
- //출력할 문자열
+//출력할 문자열
 // for(let line=1; line<=5; line++){
 //   output+="\n";
 // }
 
 // for(let star=1; star<=line; star++){
-  
+
 //   output=output+"*";
 // }
 
@@ -67,13 +67,13 @@
 
 
 
-let output="";
-for(let line=1; line<=5; line++){
-for(let star=1; star<=line; star++){
-  
-  output=output+"*";
-}
-  output+="\n";
+let output = "";
+for (let line = 1; line <= 5; line++) {
+  for (let star = 1; star <= line; star++) {
+
+    output = output + "*";
+  }
+  output += "\n";
 }
 console.log(output);
 
@@ -86,13 +86,13 @@ console.log(output);
 // let sum = 0;
 // let avg = 0;
 
-// for (let index = 0; index <= scores.length - 1; index++) {
+// for (let index = 0; index <= scores.length - 1; index++) { 
 //   sum += scores[index];
 //   avg = sum / scores.length;
 // }
 
-// console.log(sum);
-// console.log(avg);
+// console.log(`총점:${sum}`);
+// console.log(`평균:${avg}`);
 
 /* 문제 7: 특정 조건에서 반복문 탈출하기 (break)
 점수 배열에서 100점 만점자가 처음 나타나면, 그 학생의 점수를 출력하고 반복문을 즉시 종료하는 프로그램을 작성하시오.
@@ -100,23 +100,43 @@ console.log(output);
 
 // let scores = [77, 82, 100, 54, 96];
 
-// for (let index = 0; index <= scores.length; index++) {
+// for (let index = 0; index <= scores.length-1; index++) {
 //   if (scores[index] === 100) {
 //     console.log(scores[index]);
 //     console.log("100점 찾음");
+//     break;
 //   }
 // }
 
 
 /*문제 8: 특정 조건 건너뛰기 (continue)
-점수 배열에서 60점 미만(과락)인 점수는 건너뛰고, 60점 이상인 점수만 콘솔에 출력하는 프로그램을 작성하시오.
-let scores = [90, 45, 72, 88, 59, 100];*/
+점수 배열에서 60점 미만(과락)인 점수는 건너뛰고, 60점 이상인 점수만 콘솔에 출력하는 프로그램을 작성하시오.*/
+// let scores3 = [90, 45, 72, 88, 59, 100];
+
+// //continue:증감식으로 이동
+
+// for(let index=0; index<=scores3.length-1; index++){
+// if(scores3[index]<60){
+//   continue;
+// }
+// console.log(scores3[index]);
+// }
 
 
 
 /*문제 9: 배열에서 특정 값의 개수 세기
-다음 배열에서 'A'형 혈액형을 가진 사람이 몇 명인지 for 반복문을 통해 세고, 그 수를 콘솔에 출력하시오.
-let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A']; */
+다음 배열에서 'A'형 혈액형을 가진 사람이 몇 명인지 for 반복문을 통해 세고, 그 수를 콘솔에 출력하시오.*/
+// let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A'];
+
+// let sum = 0;
+
+// for (let index = 0; index <= bloodTypes.length - 1; index++) {
+//   if (bloodTypes[index] === 'A') {
+//     sum += 1;
+//     continue;
+//   }
+// }
+// console.log(sum);
 
 /*문제 10: 학생 점수 시각화하기 
 주어진 학생 이름과 점수 배열을 이용하여, 각 학생의 점수를 동그라미(●, ○)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -133,4 +153,27 @@ HTML에 학생 이름과 변환된 점수 시각화를 한 줄씩 출력합니�
 (3). 출력 예시 (HTML)
 유재석 ●●●●●●●●●○
 강호동 ●●●●●●●●○○
-신동엽 ●●●●●●●○○○  */
+신동엽 ●●●●●●●○○○ */
+
+
+let nameArray = ['유재석', '강호동', '신동엽'];
+let scores4 = [92, 86, 72];
+let html=''
+for (let index = 0; index <= nameArray.length - 1; index++) {
+  html+=nameArray[index];
+  let b = parseInt(scores4[index] / 10);
+  for (let i = 1; i <= 10; i++) {
+    if(i<=b){
+      html+="●";
+    }
+    else{
+      html+="○";
+    }
+  }
+  html+="<br />";
+}
+
+
+document.write(html);
+
+//점수의 몫 구하기 ,몫 만큼 검은별

@@ -1,0 +1,54 @@
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+/* [1]선택자:hover 만일 해당 요소의 마우스를 올렸을때 */
+a:hover {
+  color: red;
+  font-size: 20px;
+}
+
+/* [2]방문한적있는 링크일때 */
+a:visited() {
+  color: blue;
+}
+
+/* [3]선택자:active 만일 해당 요소를 클릭하는 순간에 */
+a:active {
+  color: yellow;
+  font-size: 30px;
+}
+
+/* [4]선택자::before/after HTML에는 존재하지않지만 가상에 요소를 content에 추가가능 */
+
+
+.box1::before {
+  content: "해당요소 앞부분";
+  color:aqua;
+}
+
+.box1::after{
+  content:"가상요소 after구역";
+  color: brown;
+}
+
+/* [활용1]글머리 */
+li{list-style-type: none;}
+
+.box2>li::before{
+  content: "★";
+}
+
+/* [활용2]이미지 활용*/
+
+.box2>li::after{content: url(../css/);}
+
+
+/* [5]nth-of-type(순서번호) 선택자의 요소들이 여러개 일때 번호로 선택하기 */
+
+.box2>li:nth-of-type(even){
+  color:red;
+}
+

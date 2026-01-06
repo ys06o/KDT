@@ -1,0 +1,46 @@
+.wrap{
+  background-color: red;
+  width: 700px;
+  height:450px;
+  margin: 0 auto;
+  position: relative;
+}
+.box{
+  border-radius: 10px;
+  width: 100px;
+  height: 70px;
+  background-color: yellow;
+  position: absolute;
+  text-align: center;  
+  justify-content: center;
+}
+
+.box1{
+  left: 300px;
+  top: 50px;
+}
+
+.box2{
+  top: 120px;
+  left: 150px;
+}
+
+.box3{
+  top: 120px;
+  left:450px;
+}
+
+.box4{
+  left: 150px;
+  top: 260px;
+}
+
+.box5{
+  top: 260px;
+  left: 450px;
+}
+
+.box6{
+  left: 300px;
+  top: 330px;
+}
