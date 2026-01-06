@@ -114,7 +114,7 @@ else{
   else{
     console.log("재고가부족합니다.")
   }
-}
+}                                                                                                                                                                                                                                                                         
 
 
 
@@ -228,11 +228,24 @@ HTML에 차량 번호, 주차 시간, 최종 요금을 한 줄씩 출력합니�
 let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
 let usageMinutes = [65, 30, 140, 420];
 
-let pr=0;
-let count=parseInt()
+let html3='';
 for(let i=0; i<=carNumbers.length-1; i++){
-
-let count=parseInt((usageMinutes[i]-30)/10);
-pr=count*500;
-
+let number=carNumbers[i];
+html3+=`<div> <span>${number}:</span>`;
+let min=usageMinutes[i];
+html3+=`<span>${min}분 주차</span>`;
+let money=0;
+if(min<=30){
+  money=1000;
 }
+else{
+  money=parseInt((min-30)/10)*500+1000;
+}
+
+if(money>20000){
+  money=20000;
+}
+html3+=`<span> 따라서 요금은${money}원입니다.</span>`;
+html3+=`</div>`;
+}
+document.write(html3);

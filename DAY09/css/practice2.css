@@ -1,77 +1,49 @@
 .wrap {
-  background-color: gray;
+  background-color: wheat;
   width: 700px;
-  height: 500px;
-  display: flex;
+  height: 600px;
+  position: relative;
+}
 
+li.me {
+  list-style: none;
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
 }
 
 a {
   text-decoration: none;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  font-size: 10px;
-  text-align: center;
-  align-items: center;
-}
-
-li {
-  display: flex;
-  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+  display: none; 
   justify-content: center;
-  text-align: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-}
+  text-align: center;
 
-.top {
-  color: blue;
-  background-color: skyblue;
   position: absolute;
-  top: 375px;
-  left: 650px;
-  display: none;
-}
-
-.naver {
-  color: blue;
-  background-color: greenyellow;
-  position: absolute;
-
-  top: 400px;
-  left: 650px;
-  display: none;
-}
-
-.help {
-  color: blue;
-  background-color: darkcyan;
-  position: absolute;
-  left: 650px;
-  top: 425px;
-  display: none;
-}
-
-.chat {
-  color: blue;
-  background-color: darkorchid;
-  position: absolute;
-  top: 450px;
-  left: 650px;
-  display: none;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .plus {
   color: white;
-  background-color: black;
-  position: absolute;
-  left: 650px;
-  top: 475px;
-  width:50px;
+  background-color: #222;
+  font-size: 30px;
+  bottom: 0;
+  display: flex;
 }
 
-.plus:hover .top{
-  display: block;
+.chat { background-color: #EBDCF5; color: blue; bottom: 75px; }
+.help { background-color: #F9E2E2; color: blue; bottom: 145px; }
+.naver { background-color: #E2F5E2; color: blue; bottom: 215px; }
+.top { background-color: #E2EBF5; color: blue; bottom: 285px; }
+
+.me:hover a {
+  display: flex; 
 }
