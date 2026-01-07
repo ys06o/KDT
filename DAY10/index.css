@@ -2,16 +2,21 @@
   padding: 0px;
   margin: 0px;
   border: 1px soild red;
+  font-size: 12px;
 }
 
 .header {}
 
 .topmenu>ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content:space-between;
   list-style-type: none;
+  margin: 0;
 }
 
+.topmenu>ul>span{
+  padding: 10px;
+}
 .topmenu>ul>li {
   padding: 10px;
   font-size: 10px;
@@ -58,7 +63,7 @@ hr {
 }
 
 #main-img {
-  width: 1600px;
+  width: 100%
 }
 
 
@@ -125,14 +130,16 @@ hr {
 }
 
 
-.content{
+.content {
   width: 1600px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
+
 .goods {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 
@@ -140,4 +147,37 @@ hr {
 
   width: 380px;
   margin: 30px 0px;
+  justify-content: space-between;
+}
+
+.imgs {
+  width: 100%;
+}
+
+
+
+
+/* footer */
+
+.footer {
+  margin: 10px;
+  top: -10px;
+}
+
+.footertop {
+  background-color: #f7f7f7;
+}
+
+.footertop .footercontent {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.footerbottom {
+  color: gray;
+  display: flex;
+  justify-content: center;
 }
