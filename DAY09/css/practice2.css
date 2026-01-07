@@ -39,7 +39,8 @@ a {
   display: flex;
 }
 
-.chat { background-color: #EBDCF5; color: blue; bottom: 75px; }
+.chat { background-color: #EBDCF5; color: blue; bottom: 75px; 
+}
 .help { background-color: #F9E2E2; color: blue; bottom: 145px; }
 .naver { background-color: #E2F5E2; color: blue; bottom: 215px; }
 .top { background-color: #E2EBF5; color: blue; bottom: 285px; }

@@ -1,0 +1,36 @@
+/* 1.오른쪽하단에 토근전체이동 */
+.toggle-wrap{
+  position: fixed;
+  bottom: 10px;
+  right:10px;
+}
+
+.main{
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 150%;
+  font-size: 30px;
+}
+
+.btn{
+  position: absolute;
+  bottom: 60px;
+  right: 5px;
+}
+
+li{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: blueviolet;
+  font-size: 15x;
+  bottom: 60px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.toggle-wrap:hover

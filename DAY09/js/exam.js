@@ -23,7 +23,7 @@ obj2.속성명3 = true;
 obj2.속성명3 = false;
 
 //[7] 객체 속성 삭제, delete 객체변수명.속성명;
-delete obj2.속성명3;
+// delete obj2.속성명3;
 //[8]객체 속성 내 모든 자료형(타입) 가능하다.
 let obj3 = { a: 1, b: "안녕", c: 'ture', d: { aa: 1, bb: 2 } };
 
