@@ -1,0 +1,39 @@
+.basicTable{
+  width: 500px;
+  border: 1px solid black;
+}
+
+.basicTable th , .basicTable td{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.basicTable td:nth-child(1){
+  background-color: aqua;
+}
+
+.basicTable td:nth-child(2){
+  text-align: center;
+}
+
+/*속성 선택자:  선택자:[속성명] */
+.basicTable td[colspan]{
+  text-align: right;
+}
+
+.sytleTable{
+  width: 700px;
+  border-collapse: collapse;
+}
+
+.sytleTable th , .sytleTable td{
+  border: 1px solid black;
+}
+
+.sytleTable>tbody>tr:nth-of-type(odd){
+  background-color: antiquewhite;
+}
+
+.sytleTable>tbody>tr:hover{
+  background-color: gray; color: white;
+}

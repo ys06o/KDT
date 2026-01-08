@@ -1,0 +1,38 @@
+.box{
+  border: 1px solid red;
+  padding:10px;
+}
+
+.back1{
+  background-color:aqua;
+  background-color: #00ffff;
+  background-color: rgb(0, 0, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* [1]이미지 삽입할때 img 대신 배경으로 가능 */
+.back2{
+  background-image: url("../nature-9613983_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.back3{
+  background-image: url("../nature-9613983_1280.jpg");
+  background-repeat: repeat;
+}
+
+.back4{
+  background-image: url("../nature-9613983_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /*스크롤 이동해도 위치 고정*/
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  background-image: url("../sp_main.3427b960.png  ");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
