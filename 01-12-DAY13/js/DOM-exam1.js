@@ -38,3 +38,5 @@ function func3() {
   title2.style.color = "red";             // 글자색
   title2.style.backgroundColor = "blue";  // 배경색 (- 대신 대문자)
 }
+func3();
+

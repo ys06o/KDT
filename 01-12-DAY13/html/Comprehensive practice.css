@@ -1,0 +1,41 @@
+#wrap {
+  margin: 0 auto;
+  width: 960px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px #eeeeee;
+  padding: 50px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 50px 0px;
+  margin-bottom: 50px;
+}
+
+#header>input,
+#header>select {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+}
+
+#header>button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+#main {
+width: 100%;
+
+}
+
+#main table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
