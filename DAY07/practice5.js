@@ -1,14 +1,14 @@
 /*[ 실습5 ]
 문제 1: 배열에서 최댓값 찾기
 주어진 숫자 배열에서 가장 큰 값을 찾아 콘솔에 출력하는 프로그램을 작성하시오. (단, Math.max() 함수 사용 금지)*/
-let numbers = [23, 5, 67, 12, 88, 34];
-let max = numbers[0];
-for (let i = 0; i <= numbers.length - 1; i++) {
-  if (numbers[i] > max) {
-    max = numbers[i];
-  }
-}
-console.log(max);
+// let numbers = [23, 5, 67, 12, 88, 34];
+// let max = numbers[0];
+// for (let i = 0; i <= numbers.length - 1; i++) {
+//   if (numbers[i] > max) {
+//     max = numbers[i];
+//   }
+// }
+// console.log(max);
 
 /*문제 2: 별 찍기 (기본 역삼각형)
 for 중첩 반복문을 사용하여 아래와 같은 모양의 별을 출력하시오.
@@ -18,6 +18,12 @@ for 중첩 반복문을 사용하여 아래와 같은 모양의 별을 출력하
 **
 *
 */
+for (let i = 0; i < 5; i++) {
+  for (let j = 0; j < 5 - i; j++) {
+    console.log("*");
+  }
+  console.log("\n");
+}
 
 // for(let star=0; star<=5; star++)
 /*문제 3: 배열에서 특정 문자 찾기 (break 활용)
@@ -53,11 +59,11 @@ let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
 
 
 let numbers2 = [1, 5, 2, 3, 5, 1, 4, 2];
-let newAry=[];
+let newAry = [];
 
-for(let index=0; index<=numbers2.length-1; index++){
-  let num=numbers2[index]; //index번쨰 값 추출
-  if(newAry.indexOf(num)==-1){  //index(찾을값)
+for (let index = 0; index <= numbers2.length - 1; index++) {
+  let num = numbers2[index]; //index번쨰 값 추출
+  if (newAry.indexOf(num) == -1) {  //index(찾을값)
     newAry.push(num);
   }
 }
@@ -78,7 +84,7 @@ let numbers4 = [5, 3, 4, 1, 2];
 for (let j = 0; j < numbers4.length; j++) {
   for (let a = 0; a < numbers4.length - 1; a++) {
     if (numbers4[a] > numbers4[a + 1]) { //a값이 a+1보다 더크면 스왑
-      let temp = numbers4[a];                
+      let temp = numbers4[a];
       numbers4[a] = numbers4[a + 1];
       numbers4[a + 1] = temp;
     }
@@ -98,23 +104,23 @@ let stock = [10, 5, 20];*/
 
 let products = ['볼펜', '노트', '지우개'];
 let stock = [10, 5, 20];
-let person=prompt("상품명 입력");
-let person1=prompt("수량 입력");
+let person = prompt("상품명 입력");
+let person1 = prompt("수량 입력");
 
-let index=products.indexOf(person);
-if(index==-1){
+let index = products.indexOf(person);
+if (index == -1) {
   console.log("다시 입력해주세요.");
 }
-else{
-  if(stock[index]>=person1){
+else {
+  if (stock[index] >= person1) {
     console.log("구매 완료!");
-    stock[index]-=person1;
+    stock[index] -= person1;
     console.log(stock[index]);
   }
-  else{
+  else {
     console.log("재고가부족합니다.")
   }
-}                                                                                                                                                                                                                                                                         
+}
 
 
 
@@ -179,22 +185,22 @@ for 반복문을 사용하여 6개의 좌석을 모두 출력합니다.
 */
 
 let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
-  let html = '';
+let html = '';
 
-  for (let i = 0; i < seatStatus.length; i++) {
+for (let i = 0; i < seatStatus.length; i++) {
 
-    if (seatStatus[i] == '빈좌석') {
-      html += '<div style="color:blue; display:inline-block; width:100px;">빈좌석</div>';
-    } else {
-      html += '<div style="color:red; display:inline-block; width:100px;">예약석</div>';
-    }
-
-    if ((i + 1) % 2 == 0) {
-      html += '<br />';
-    }
+  if (seatStatus[i] == '빈좌석') {
+    html += '<div style="color:blue; display:inline-block; width:100px;">빈좌석</div>';
+  } else {
+    html += '<div style="color:red; display:inline-block; width:100px;">예약석</div>';
   }
 
-  document.write(html);
+  if ((i + 1) % 2 == 0) {
+    html += '<br />';
+  }
+}
+
+document.write(html);
 
 
 /*문제 10: 주차 요금 정산하기
@@ -228,24 +234,24 @@ HTML에 차량 번호, 주차 시간, 최종 요금을 한 줄씩 출력합니�
 let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
 let usageMinutes = [65, 30, 140, 420];
 
-let html3='';
-for(let i=0; i<=carNumbers.length-1; i++){
-let number=carNumbers[i];
-html3+=`<div> <span>${number}:</span>`;
-let min=usageMinutes[i];
-html3+=`<span>${min}분 주차</span>`;
-let money=0;
-if(min<=30){
-  money=1000;
-}
-else{
-  money=parseInt((min-30)/10)*500+1000;
-}
+let html3 = '';
+for (let i = 0; i <= carNumbers.length - 1; i++) {
+  let number = carNumbers[i];
+  html3 += `<div> <span>${number}:</span>`;
+  let min = usageMinutes[i];
+  html3 += `<span>${min}분 주차</span>`;
+  let money = 0;
+  if (min <= 30) {
+    money = 1000;
+  }
+  else {
+    money = parseInt((min - 30) / 10) * 500 + 1000;
+  }
 
-if(money>20000){
-  money=20000;
-}
-html3+=`<span> 따라서 요금은${money}원입니다.</span>`;
-html3+=`</div>`;
+  if (money > 20000) {
+    money = 20000;
+  }
+  html3 += `<span> 따라서 요금은${money}원입니다.</span>`;
+  html3 += `</div>`;
 }
 document.write(html3);
